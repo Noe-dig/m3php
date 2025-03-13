@@ -1,7 +1,9 @@
 <?php
 
-function mijnPrint(){
-    print("");
+$dezeGaatMee = "deze waarde wordt meegenomen";
+
+function mijnPrint($printText){
+    print($printText);
     print("<br>");
 }
 
@@ -9,6 +11,7 @@ function mijnPrint(){
     mijnPrint("regel 2");
     mijnPrint("regel 3");
 
-    ## Er komt een errorcode omdat de variabele $printText niet is gedefinieerd.
-
+    ## Er komt een errorcode omdat de variabele printText niet is gedefinieerd.
+    echo "Er komt een errorcode omdat de variabele printText niet is gedefinieerd.";
+    echo "<br>" . $dezeGaatMee;
 ?>
