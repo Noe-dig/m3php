@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <form action="verwerk.php" method="POST">
+            <p><h1>Uw naam:</h1>
+            <input type="text" name="naam" placeholder="uw naam"></p>
+            <p><h1>De datum:</h1>
+            <input type="date" name="date"></p>
+            <p><h1>De graad:</h1>
+            <select name="degrees" id="degrees">
+                <option name="0">0</option>
+                <option name="10">10</option>
+                <option name="20">20</option>
+                <option name="30">30</option>
+                <option name="40">40</option>
+                <option name="50">50</option>
+            </select></p>
+            <br>
+            <input type="submit" name="submit" id="submitButton">
+        </form>
+    </article>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            font-size: 62.5%
+        }
+        body{
+            background: lightgrey;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(3, 1fr);
+            font-family: sans-serif;
+        }
+        h1{
+            font-size: 3rem;
+            color: darkblue;
+        }
+        article{
+            padding: 2rem;
+            background: white;
+            grid-row: 2/3;
+            grid-column: 2/3;
+            border-radius: 1.2rem;
+            box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.2);
+            width: 40rem;
+            text-align: center;
+        }        
+        input, select{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            margin-top: 0.5rem;
+            width: 80%;
+        }
+        #submitButton{
+            border-radius: 1.2rem;
+            border: none;
+            padding: 1rem 0;
+            background: orange;
+            color: white;
+        }
+    </style>
+</body>
+</html>
