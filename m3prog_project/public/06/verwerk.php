@@ -4,7 +4,6 @@ $naam = $_POST['naam'];
 $date = $_POST['date'];
 $degrees = $_POST['degrees'];
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +15,7 @@ $degrees = $_POST['degrees'];
 <body>
     <article>
         <?php
-           
+
             print_r("<p><h1>Uw naam:</h1><h2>$naam</h2><br></p>
                     <p><h1>Gekozen datum:</h1><h2>$date</h2><br></p>
                     <p><h1>Gekozen graad:</h1><h2>$degrees</h2><br></p>");
